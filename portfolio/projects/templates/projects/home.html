@@ -68,6 +68,7 @@
                 {% for project in projects %}
         
                 <div class="col">
+                  <a href="{% url 'detail' project.id %}">
                     <div class="card shadow-sm">
                         <img src="{{ project.image.url }}">
 
@@ -75,6 +76,7 @@
                             <p class="card-text">{{ project.summary }}</p>
                         </div>
                     </div>
+                  </a>
                 </div>
 
                 {% endfor %}
