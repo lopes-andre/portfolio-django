@@ -6,3 +6,6 @@ def home(request):
     return render(request, 'projects/home.html', {
         'projects': projects,
     })
+
+def detail(request, job_id):
+    return render(request, 'projects/detail.html')
