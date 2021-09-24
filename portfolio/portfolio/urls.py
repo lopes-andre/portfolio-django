@@ -24,4 +24,5 @@ urlpatterns = [
     path('', views.home, name='home'),
 ]
 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+# Line below only to run collectstatics
+# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -124,7 +124,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# Line below only to run the collectstatic
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+# Sets the folder for static files
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
